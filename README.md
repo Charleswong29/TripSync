@@ -215,6 +215,8 @@ Users select Public or Private Trip and enter destination, dates, budget and mem
 ### 3. Travel Personality
 Users provide interests, food preferences, travel pace, transportation preferences, must-visit places and things they want to avoid.
 
+<img width="238" height="370" alt="Screenshot 2026-09-11 005910" src="https://github.com/user-attachments/assets/d0335fef-9ca1-487b-8722-b763c3d8b005" />
+
 ![Travel Personality](assets/travel-personality.png)
 
 ### 4. Group Lobby
