@@ -106,7 +106,7 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 ### 🌳 Problem Tree
 
-<img width="1536" height="1024" alt="MAP 2" src="https://github.com/user-attachments/assets/b2b66b83-59e1-4ac5-a5c3-74f5f0effe1d" />
+<img width="936" height="524" alt="MAP 2" src="https://github.com/user-attachments/assets/b2b66b83-59e1-4ac5-a5c3-74f5f0effe1d" />
 
 [TripSync Problem Tree]
 
@@ -114,7 +114,7 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 ### 🔄 Idea Evolution
 
-<img width="1536" height="1024" alt="MAP 3" src="https://github.com/user-attachments/assets/0a36d32d-389d-4ee7-a205-7300a7f0820a" />
+<img width="936" height="524" alt="MAP 3" src="https://github.com/user-attachments/assets/0a36d32d-389d-4ee7-a205-7300a7f0820a" />
 
 [TripSync Idea Evolution]
 
@@ -122,7 +122,7 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 ### 👤 User Flow
 
-<img width="1536" height="1024" alt="MAP 4" src="https://github.com/user-attachments/assets/a834e5dc-d713-4929-ab18-971dfcc30e42" />
+<img width="936" height="524" alt="MAP 4" src="https://github.com/user-attachments/assets/a834e5dc-d713-4929-ab18-971dfcc30e42" />
 
 [TripSync User Flow]
 
