@@ -192,7 +192,7 @@ This led to our current positioning:
 
 # 3. Design & Prototype
 
-**UI Prototype:** [TODO: Public Figma / Canva / Prototype Link]
+**UI Prototype:** https://ai.studio/apps/afdaea94-28d1-468e-a89f-609de2f72771
 
 Our prototype follows the complete TripSync user journey:
 
