@@ -208,7 +208,7 @@ Users can discover a public trip or create their own trip.
 ### 2. Create Trip
 Users select Public or Private Trip and enter destination, dates, budget and member limit.
 
-<img width="555" height="881" alt="Screenshot 2026-09-11 003208" src="https://github.com/user-attachments/assets/26adaf56-232a-4eca-bf8e-1199ece041cd" />
+<img width="245" height="371" alt="Screenshot 2026-09-11 003208" src="https://github.com/user-attachments/assets/26adaf56-232a-4eca-bf8e-1199ece041cd" />
 
 ![Create Trip](assets/create-trip.png)
 
@@ -220,7 +220,7 @@ Users provide interests, food preferences, travel pace, transportation preferenc
 ### 4. Group Lobby
 Shows members, compatibility scores and options to invite or apply to join.
 
-<img width="552" height="876" alt="Screenshot 2026-09-11 003422" src="https://github.com/user-attachments/assets/27112b04-adcb-4457-a238-788da9a5740b" />
+<img width="245" height="376" alt="Screenshot 2026-09-11 003422" src="https://github.com/user-attachments/assets/27112b04-adcb-4457-a238-788da9a5740b" />
 
 ![Group Lobby](assets/group-lobby.png)
 
@@ -232,7 +232,7 @@ Members vote on attractions using:
 😐 Neutral  
 👎 Skip
 
-<img width="535" height="868" alt="Screenshot 2026-09-11 003450" src="https://github.com/user-attachments/assets/257cf6e4-61d5-4df2-8379-5bc556b5be0f" />
+<img width="235" height="368" alt="Screenshot 2026-09-11 003450" src="https://github.com/user-attachments/assets/257cf6e4-61d5-4df2-8379-5bc556b5be0f" />
 
 ![Swipe and Vote](assets/swipe-vote.png)
 
@@ -240,7 +240,7 @@ Members vote on attractions using:
 
 TripSync combines group preferences while also showing whether each member is fairly represented.
 
-<img width="550" height="882" alt="Screenshot 2026-09-11 003522" src="https://github.com/user-attachments/assets/c01d488b-1024-4fe3-b589-d81531bd0ffa" />
+<img width="240" height="372" alt="Screenshot 2026-09-11 003522" src="https://github.com/user-attachments/assets/c01d488b-1024-4fe3-b589-d81531bd0ffa" />
 
 ![Group Match](assets/group-match.png)
 
@@ -253,6 +253,8 @@ The generated itinerary displays:
 - Estimated cost
 - Transportation
 - Group Match
+
+<img width="243" height="372" alt="Screenshot 2026-09-11 005218" src="https://github.com/user-attachments/assets/e55dfaf0-31bd-4e34-a66a-82b14e937a64" />
 
 ![Smart Itinerary](assets/smart-itinerary.png)
 
@@ -279,6 +281,8 @@ Users select what went wrong:
 - 👥 Group Changed
 
 TripSync then adjusts the affected section of the itinerary.
+
+<img width="240" height="372" alt="Screenshot 2026-09-11 005454" src="https://github.com/user-attachments/assets/b91fc8db-6d08-4840-9a98-8c97475e15e1" />
 
 ![Plan Rescue](assets/plan-rescue.png)
 
