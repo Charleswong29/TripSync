@@ -1,4 +1,4 @@
-# 🌍 TripSync by [JUST SLEEP JUST CHILL CINCAI]
+# 🌍 TripSync by [VEGE LLAO²]
 
 > **Find people. Plan together. Travel better.**
 
@@ -106,11 +106,15 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 ### 🌳 Problem Tree
 
+<img width="1536" height="1024" alt="MAP 2" src="https://github.com/user-attachments/assets/b2b66b83-59e1-4ac5-a5c3-74f5f0effe1d" />
+
 ![TripSync Problem Tree](assets/problem-tree.png)
 
 *The problem tree explores the causes of stressful group travel planning, including conflicting preferences, scattered travel information, planning burden and unexpected changes.*
 
 ### 🔄 Idea Evolution
+
+<img width="1536" height="1024" alt="MAP 3" src="https://github.com/user-attachments/assets/0a36d32d-389d-4ee7-a205-7300a7f0820a" />
 
 ![TripSync Idea Evolution](assets/idea-evolution.png)
 
