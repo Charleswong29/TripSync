@@ -98,7 +98,7 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 ### 🧠 Initial Mind Map
 
-<img width="1536" height="1024" alt="MAP 1" src="https://github.com/user-attachments/assets/e8a3474e-cbf8-4e62-b125-34fe90bbc4af" />
+<img width="1336" height="824" alt="MAP 1" src="https://github.com/user-attachments/assets/e8a3474e-cbf8-4e62-b125-34fe90bbc4af" />
 
 [Initial TripSync Mindmap]
 
