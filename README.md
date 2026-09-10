@@ -201,10 +201,14 @@ Our prototype follows the complete TripSync user journey:
 ### 1. Welcome / Explore Trips
 Users can discover a public trip or create their own trip.
 
+<img width="540" height="870" alt="Screenshot 2026-09-11 003021" src="https://github.com/user-attachments/assets/0e609824-f1d2-4d2d-9b22-ae692f67d3b1" />
+
 ![Welcome Screen](assets/welcome.png)
 
 ### 2. Create Trip
 Users select Public or Private Trip and enter destination, dates, budget and member limit.
+
+<img width="555" height="881" alt="Screenshot 2026-09-11 003208" src="https://github.com/user-attachments/assets/26adaf56-232a-4eca-bf8e-1199ece041cd" />
 
 ![Create Trip](assets/create-trip.png)
 
@@ -216,6 +220,8 @@ Users provide interests, food preferences, travel pace, transportation preferenc
 ### 4. Group Lobby
 Shows members, compatibility scores and options to invite or apply to join.
 
+<img width="552" height="876" alt="Screenshot 2026-09-11 003422" src="https://github.com/user-attachments/assets/27112b04-adcb-4457-a238-788da9a5740b" />
+
 ![Group Lobby](assets/group-lobby.png)
 
 ### 5. Swipe & Vote
@@ -226,11 +232,15 @@ Members vote on attractions using:
 😐 Neutral  
 👎 Skip
 
+<img width="535" height="868" alt="Screenshot 2026-09-11 003450" src="https://github.com/user-attachments/assets/257cf6e4-61d5-4df2-8379-5bc556b5be0f" />
+
 ![Swipe and Vote](assets/swipe-vote.png)
 
 ### 6. Group Match & Fairness
 
 TripSync combines group preferences while also showing whether each member is fairly represented.
+
+<img width="550" height="882" alt="Screenshot 2026-09-11 003522" src="https://github.com/user-attachments/assets/c01d488b-1024-4fe3-b589-d81531bd0ffa" />
 
 ![Group Match](assets/group-match.png)
 
