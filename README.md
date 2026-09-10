@@ -184,7 +184,7 @@ This led to our current positioning:
 
 | **Date** | **Mentor** | **Feedback Received** | **What Was Changed** |
 |---|---|---|---|
-| 3 sept 2026 | Miss Zakiah | The concept has too many features for the prototype. Focus on group planning and Plan Rescue instead of booking/payment features. | Hotel booking, payment and marketplace features were moved to Future Development. The MVP now focuses on Travel Teaming, Group Planning and Plan Rescue. |
+| - | - | - | - |
 
 > **Note:** This section will only contain actual mentor feedback received by the team.
 
