@@ -201,7 +201,7 @@ Our prototype follows the complete TripSync user journey:
 ### 1. Welcome / Explore Trips
 Users can discover a public trip or create their own trip.
 
-<img width="540" height="870" alt="Screenshot 2026-09-11 003021" src="https://github.com/user-attachments/assets/0e609824-f1d2-4d2d-9b22-ae692f67d3b1" />
+<img width="140" height="470" alt="Screenshot 2026-09-11 003021" src="https://github.com/user-attachments/assets/0e609824-f1d2-4d2d-9b22-ae692f67d3b1" />
 
 ![Welcome Screen](assets/welcome.png)
 
