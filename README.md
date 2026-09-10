@@ -1,11 +1,11 @@
-# 🌍 TripSync by [VEGE LLAO²]
+# 🌍 TripSync by VEGE LLAO²
 
 > **Find people. Plan together. Travel better.**
 
-**Team:** [Celine Hew Boon Ling], [Kok Jia Hui], [Siew Hoi Wei], [Wong Chee Yong]  
-**Problem Statement:** Travel Planner  
-**Video Presentation:** []  
-**Presentation Slides:** []
+**Team Member :** Celine Hew Boon Ling, Kok Jia Hui, Siew Hoi Wei, Wong Chee Yong  
+**Problem Statement :** Travel Planner  
+**Video Presentation :** []  
+**Presentation Slides :** []
 
 ---
 
@@ -100,7 +100,7 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 <img width="1536" height="1024" alt="MAP 1" src="https://github.com/user-attachments/assets/e8a3474e-cbf8-4e62-b125-34fe90bbc4af" />
 
-![Initial TripSync Mindmap](assets/tripsync-mindmap.png)
+[Initial TripSync Mindmap]
 
 *This mind map shows our early exploration of the Travel Planner problem, including itinerary generation, budgeting, group preferences, voting and unexpected travel situations.*
 
@@ -108,7 +108,7 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 <img width="1536" height="1024" alt="MAP 2" src="https://github.com/user-attachments/assets/b2b66b83-59e1-4ac5-a5c3-74f5f0effe1d" />
 
-![TripSync Problem Tree](assets/problem-tree.png)
+[TripSync Problem Tree]
 
 *The problem tree explores the causes of stressful group travel planning, including conflicting preferences, scattered travel information, planning burden and unexpected changes.*
 
@@ -116,13 +116,15 @@ During brainstorming, we explored different ways of solving problems that occur 
 
 <img width="1536" height="1024" alt="MAP 3" src="https://github.com/user-attachments/assets/0a36d32d-389d-4ee7-a205-7300a7f0820a" />
 
-![TripSync Idea Evolution](assets/idea-evolution.png)
+[TripSync Idea Evolution]
 
 *TripSync evolved from a basic AI itinerary generator into a group-focused platform that supports travel teaming, group agreement and adaptive planning.*
 
 ### 👤 User Flow
 
-![TripSync User Flow](assets/user-flow.png)
+<img width="1536" height="1024" alt="MAP 4" src="https://github.com/user-attachments/assets/a834e5dc-d713-4929-ab18-971dfcc30e42" />
+
+[TripSync User Flow]
 
 *The user flow demonstrates the complete journey from finding or creating a trip to generating an itinerary and using Plan Rescue when circumstances change.*
 
