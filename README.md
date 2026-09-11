@@ -1,11 +1,11 @@
 # 🌍 TripSync by VEGE LLAO²
 
-> **Find people. Plan together. Travel better.**
+**Find people. Plan together. Travel better.**
 
-**Team Member :** Celine Hew Boon Ling, Kok Jia Hui, Siew Hoi Wei, Wong Chee Yong  
-**Problem Statement :** Travel Planner  
-**Video Presentation :** []  
-**Presentation Slides :** []
+**Team Members:** Celine Hew Boon Ling, Kok Jia Hui, Siew Hoi Wei, Wong Chee Yong  
+**Problem Statement:** Travel Planner  
+**Video Presentation:**  
+**Presentation Slides:**  
 
 ---
 
@@ -15,263 +15,290 @@
 
 Planning a trip becomes more difficult when multiple people are involved.
 
-Travellers may have different budgets, interests, travel pace, food preferences, transportation preferences and must-visit places. This often makes group decision-making difficult, and one person may end up doing most of the planning.
+Travellers may have different budgets, interests, travel pace, food preferences, transportation preferences and must-visit places. This makes group decision-making difficult, and one person often ends up doing most of the planning.
 
 Solo travellers may face another problem: they want to travel but do not have a suitable travel companion because their friends may be unavailable, have different budgets or prefer different travel styles.
 
-Travel information is also scattered across different platforms. Travellers may need separate applications or websites for attractions, accommodation, transportation, restaurants and itinerary planning.
+Travel plans can also become unsuitable when circumstances change. Bad weather, delays, tiredness, attraction closures, budget changes or changes in group members may require the group to revise the itinerary.
 
-Finally, most travel plans are static. Unexpected situations such as bad weather, delays, overspending, tiredness, attraction closures or changes in group members can make the original itinerary unsuitable.
+TripSync focuses on three connected problems:
 
-### Existing Solutions
-
-One existing solution is **Wanderlog**, which provides itinerary planning, real-time collaboration, budgeting, route optimisation and AI-assisted travel planning.
-
-However, TripSync focuses on a different part of the group travel problem: helping users **find compatible travel companions, reach agreement fairly, and adapt the group's plan when circumstances change**.
-
-Instead of focusing only on:
-
-> "Where should we go?"
-
-TripSync also asks:
-
-> "Who should we travel with?"  
-> "How can everyone agree?"  
-> "What happens when the original plan no longer works?"
+- **Finding suitable people to travel with**
+- **Helping a group reach agreement fairly**
+- **Adapting the plan when circumstances change**
 
 ---
 
 ## 💡 Our Solution
 
-**TripSync** is an AI-powered group travel planner and travel teaming platform.
+**TripSync** is an AI-powered group travel planner and travel teaming prototype.
 
-It connects the entire group travel journey through four stages:
+The experience is built around:
 
-**Find → Agree → Plan → Adapt**
+> **Find → Agree → Plan → Adapt**
 
-Users can create a public trip to find compatible travel companions or create a private trip for family, couples and friends. Group members provide their travel preferences and vote on activities before TripSync generates an itinerary that considers budget, time, transportation and group preferences.
+TripSync supports two main ways to start a trip:
 
-When something unexpected happens during the trip, **Plan Rescue** adjusts the affected part of the itinerary instead of requiring users to start planning again.
+### Open Trip
 
-### Core Features
+For users who want to meet compatible travel companions.
 
-- 👥 Public & Private Trips
-- 🔎 Travel Teaming
-- 🧩 Travel Compatibility Matching
-- 🎭 Travel Personality & Preference Profile
-- 🗳️ Swipe & Vote
-- ⚖️ Group Fairness Meter
-- 🤖 AI Smart Itinerary
-- 💰 Budget Dashboard
+An Open Trip can include:
+
+- Destination
+- Trip dates
+- Minimum and maximum budget
+- Transport preference
+- Maximum members
+- Travel styles
+- Preferred traveller types such as Students, Young Adults, Food Lovers or Budget Travellers
+
+Open Trips are intended for public discovery.
+
+### Private Group
+
+For users who already know who they want to travel with.
+
+Current private group options include:
+
+- Friends
+- Family
+- Couple
+- School / Club
+- Company / Team
+
+Private Groups use invitation-based planning rather than public discovery.
+
+---
+
+## Current Core Features
+
+- 👥 Open Trip and Private Group creation
+- 🔎 Public trip discovery
+- 🧩 Travel compatibility / group matching concept
+- 🎭 Travel Personality and group preference collection
+- 👤 Friends and Travel Buddies invitation flow
+- 🗳️ Activity voting with Must Go, Like, Neutral and Skip
+- 📊 Voting progress
+- ⚖️ Group Match and Fairness Meter
+- 🤖 AI-generated activity suggestions
+- 🤖 AI-generated final itinerary flow
 - 🚨 Plan Rescue
-- ❤️ Favourite Travel Buddies
+- ❤️ People / Travel Buddies management
+- 🧭 Five main app areas: Explore, My Trips, Plan, People and Profile
 
 ---
 
-# 2. Ideation & Process
+# 2. Product Logic
 
-## 2.1 Ideas We Considered
+## 2.1 Open Trip vs Private Group
 
-During brainstorming, we explored different ways of solving problems that occur before, during and after group trip planning.
+TripSync separates public travel discovery from private planning.
 
-| **Idea** | **Why it was dropped / kept** |
-|---|---|
-| **Plan Rescue (Chosen)** | **Kept.** Most travel planners focus on creating an itinerary. We wanted TripSync to continue helping after the trip begins. Plan Rescue adjusts affected activities when situations such as weather, delays, budget problems or closures occur. |
-| **Travel Teaming (Chosen)** | **Kept.** We realised that some users, especially solo travellers and students, may want to travel but do not have a suitable travel companion. Public Trips allow users to discover potentially compatible travel groups. |
-| **Group Preference Matching (Chosen)** | **Kept.** Different group members may have different budgets, interests and travel styles. Combining preferences into a Group Profile helps TripSync understand the group. |
-| **Swipe & Vote (Chosen)** | **Kept.** Instead of allowing one person to control the itinerary, members can vote on suggested activities using Must Go, Like, Neutral and Skip. |
-| **Group Fairness Meter (Chosen)** | **Kept.** Majority voting can repeatedly ignore the same member. The Fairness Meter helps identify members whose preferences are underrepresented. |
-| **Travel Personality (Chosen)** | **Kept.** A simple preference profile helps calculate compatibility between travellers and provides information for itinerary generation. |
-| **Smart Budget Guard (Chosen / Simplified)** | **Kept but simplified.** Budget is important, especially for student travellers. For the prototype, we focus on planned, spent and remaining budget rather than complex financial optimisation. |
-| **People Tags & Favourite Travel Buddies (Optional)** | **Kept as a secondary feature.** Users can identify people as Family, Friend, Partner, Classmate or Travel Buddy and reconnect with compatible travellers in future trips. |
-| **Real-time Weather Detection** | **Simplified for MVP.** Automatic detection requires additional API integration. The prototype can demonstrate Plan Rescue by allowing users to select "Bad Weather", with live weather integration planned later. |
-| **Full Route Optimisation** | **Future development.** Optimising traffic, opening hours, distance, preferences and time simultaneously would make the prototype unnecessarily complex. |
-| **Hotel / Flight / Bus Booking** | **Future development.** Booking requires external providers, availability data and additional API integration. It is outside the current core experience. |
-| **Payment System** | **Future development.** Payments introduce additional security, transaction and integration requirements. |
-| **Travel Marketplace** | **Future development.** It has business potential but would distract from validating TripSync's main group planning experience during the competition. |
-| **AR Navigation** | **Dropped.** Interesting but does not directly solve TripSync's main problem of group coordination and itinerary adaptation. |
-| **Full Social Media / Chat System** | **Dropped for MVP.** TripSync is not intended to become a general social network. Basic travel teaming and invitations are enough to test the core concept. |
+| **Mode** | **Purpose** | **Access** |
+|---|---|---|
+| **Open Trip** | Find compatible travel companions | Public discovery |
+| **Friends** | Plan with friends | Private |
+| **Family** | Plan with family | Private |
+| **Couple** | Plan as two people | Private |
+| **School / Club** | Plan for a class, club or society | Private |
+| **Company / Team** | Plan an outing, team building trip or retreat | Private |
+
+Open Trips are used when the user still needs travel companions.
+
+Private Groups are used when the group already exists.
 
 ---
 
-## 2.2 Ideation Boards
+## 2.2 Trip Creation
 
-### 🧠 Initial Mind Map
+The current prototype uses a multi-step trip creation flow.
 
-<img width="936" height="524" alt="MAP 1" src="https://github.com/user-attachments/assets/e8a3474e-cbf8-4e62-b125-34fe90bbc4af" />
+### Step 1 — Who are you travelling with?
 
-[Initial TripSync Mindmap]
+Users choose:
 
-*This mind map shows our early exploration of the Travel Planner problem, including itinerary generation, budgeting, group preferences, voting and unexpected travel situations.*
+- Open Trip
+- Friends
+- Family
+- Couple
+- School / Club
+- Company / Team
 
-### 🌳 Problem Tree
+### Step 2 — Trip Details
 
-<img width="936" height="524" alt="MAP 2" src="https://github.com/user-attachments/assets/b2b66b83-59e1-4ac5-a5c3-74f5f0effe1d" />
+The current interface supports trip information such as:
 
-[TripSync Problem Tree]
+- Trip Name
+- State / Region
+- Destination
+- Trip Dates
+- One-day Trip option
+- Minimum Budget
+- Maximum Budget
+- Transport Preference
+- Maximum Members
+- Travel Style
 
-*The problem tree explores the causes of stressful group travel planning, including conflicting preferences, scattered travel information, planning burden and unexpected changes.*
+Travel Style options include:
 
-### 🔄 Idea Evolution
+- Chill
+- Food
+- Nature
+- Shopping
+- Photography
+- Adventure
+- Culture
+- Relaxation
+- Team Building
 
-<img width="936" height="524" alt="MAP 3" src="https://github.com/user-attachments/assets/0a36d32d-389d-4ee7-a205-7300a7f0820a" />
+### Step 3 — Open Trip Matching or Private Invitations
 
-[TripSync Idea Evolution]
+For an **Open Trip**, users can select matching preferences such as:
 
-*TripSync evolved from a basic AI itinerary generator into a group-focused platform that supports travel teaming, group agreement and adaptive planning.*
+- Students
+- Young Adults
+- Food Lovers
+- Photographers
+- Adventure Travellers
+- Relaxed Travellers
+- Budget Travellers
 
-### 👤 User Flow
+For a **Private Friends Trip**, the prototype includes an Invite People screen with:
 
-<img width="936" height="524" alt="MAP 4" src="https://github.com/user-attachments/assets/a834e5dc-d713-4929-ab18-971dfcc30e42" />
-
-[TripSync User Flow]
-
-*The user flow demonstrates the complete journey from finding or creating a trip to generating an itinerary and using Plan Rescue when circumstances change.*
-
----
-
-### Our Idea Evolution
-
-#### Version 1 — AI Travel Planner
-
-Our initial idea focused mainly on generating an itinerary based on destination, budget and user preferences.
-
-**Problem we identified:**  
-AI itinerary generation alone was not sufficiently differentiated from existing travel planning solutions.
-
-#### Version 2 — Group Travel Planner
-
-We expanded the idea with:
-
-- Group preferences
-- Swipe & Vote
-- Group Match Score
-- Budget management
-
-**Why we changed it:**  
-We found that group decision-making was an important problem that a simple itinerary generator did not fully solve.
-
-#### Version 3 — Adaptive Group Travel Planner
-
-We introduced:
-
-- Group Fairness Meter
-- Plan Rescue
-- Budget-aware alternatives
-
-**Why we changed it:**  
-We wanted TripSync to remain useful after an itinerary had already been generated.
-
-#### Version 4 — Travel Teaming + Group Planning
-
-We expanded TripSync further with:
-
-- Public Trips
-- Private Trips
-- Travel Compatibility
-- Favourite Travel Buddies
-
-**Why we changed it:**  
-We realised that some users face a problem even before planning begins: **they may not have suitable people to travel with.**
-
-This led to our current positioning:
-
-> **Find people. Plan together. Travel better.**
+- Friends
+- Travel Buddies
+- Search
+- Selectable people
 
 ---
 
-## 2.3 Mentor Consultation
+# 3. Current Planning Flow
 
-| **Date** | **Mentor** | **Feedback Received** | **What Was Changed** |
-|---|---|---|---|
-| - | - | - | - |
+The current TripSync planning concept follows this sequence:
 
-> **Note:** This section will only contain actual mentor feedback received by the team.
+> **Group Lobby → Travel Preferences → Group Profile → Generate Attractions → Vote Together → Voting Progress → Group Match → Generate Final Itinerary → Itinerary → Plan Rescue**
 
 ---
 
-# 3. Design & Prototype
+## 3.1 Group Lobby
 
-**UI Prototype:** https://ai.studio/apps/afdaea94-28d1-468e-a89f-609de2f72771
+The Group Lobby is the shared workspace for one trip.
 
-Our prototype follows the complete TripSync user journey:
+It can display:
 
-### 1. Welcome / Explore Trips
-Users can discover a public trip or create their own trip.
+- Trip name
+- Group member count
+- Current members
+- Compatibility information
+- Planning status
+- Invitation actions
+- Start / continue planning actions
 
-<img width="240" height="370" alt="Screenshot 2026-09-11 003021" src="https://github.com/user-attachments/assets/0e609824-f1d2-4d2d-9b22-ae692f67d3b1" />
+For a newly created group without additional members, the intended empty state is to invite people before continuing as a group.
 
-![Welcome Screen](assets/welcome.png)
+---
 
-### 2. Create Trip
-Users select Public or Private Trip and enter destination, dates, budget and member limit.
+## 3.2 Travel Personality & Trip Preferences
 
-<img width="245" height="371" alt="Screenshot 2026-09-11 003208" src="https://github.com/user-attachments/assets/26adaf56-232a-4eca-bf8e-1199ece041cd" />
+TripSync uses travel preferences to understand each traveller.
 
-![Create Trip](assets/create-trip.png)
+Current preference categories include:
 
-### 3. Travel Personality
-Users provide interests, food preferences, travel pace, transportation preferences, must-visit places and things they want to avoid.
+- Travel Style
+- Food
+- Wake-up Time
+- Interests
+- Transport preference
+- Budget-related preferences
 
-<img width="238" height="370" alt="Screenshot 2026-09-11 005910" src="https://github.com/user-attachments/assets/d0335fef-9ca1-487b-8722-b763c3d8b005" />
+The prototype also contains a Group Profile / Group Vibe screen that combines member preferences into shared interests, compromise points and an AI suggestion.
 
-![Travel Personality](assets/travel-personality.png)
+---
 
-### 4. Group Lobby
-Shows members, compatibility scores and options to invite or apply to join.
+## 3.3 Generate Attractions
 
-<img width="245" height="376" alt="Screenshot 2026-09-11 003422" src="https://github.com/user-attachments/assets/27112b04-adcb-4457-a238-788da9a5740b" />
+Before building the final itinerary, TripSync creates candidate attractions for the group to review.
 
-![Group Lobby](assets/group-lobby.png)
+The current prototype includes a Curated Attractions screen with example activities such as:
 
-### 5. Swipe & Vote
-Members vote on attractions using:
+- Genting SkyWorlds
+- Awana SkyWay
+- Chin Swee Caves Temple
+- Skytropolis Indoor Theme Park
+- Genting Premium Outlets
 
-❤️ Must Go  
-👍 Like  
-😐 Neutral  
-👎 Skip
+This stage is separate from final itinerary generation.
 
-<img width="235" height="368" alt="Screenshot 2026-09-11 003450" src="https://github.com/user-attachments/assets/257cf6e4-61d5-4df2-8379-5bc556b5be0f" />
+---
 
-![Swipe and Vote](assets/swipe-vote.png)
+## 3.4 Vote Together
 
-### 6. Group Match & Fairness
+Members review attractions and vote using:
 
-TripSync combines group preferences while also showing whether each member is fairly represented.
+- **Must Go**
+- **Like**
+- **Neutral**
+- **Skip**
 
-<img width="240" height="372" alt="Screenshot 2026-09-11 003522" src="https://github.com/user-attachments/assets/c01d488b-1024-4fe3-b589-d81531bd0ffa" />
+The voting interface shows:
 
-![Group Match](assets/group-match.png)
-
-### 7. Smart Itinerary
-
-The generated itinerary displays:
-
-- Time
-- Activity
+- Attraction
 - Estimated cost
-- Transportation
-- Group Match
+- Estimated duration
+- Tags
+- Match score
+- Voting progress
 
-<img width="243" height="372" alt="Screenshot 2026-09-11 005218" src="https://github.com/user-attachments/assets/e55dfaf0-31bd-4e34-a66a-82b14e937a64" />
+After a user finishes their ballot, the prototype includes a Voting Progress screen.
 
-![Smart Itinerary](assets/smart-itinerary.png)
+---
 
-### 8. Budget Dashboard
+## 3.5 Group Match & Fairness
 
-Users can view:
+After voting, TripSync presents group-level results.
 
-- Planned budget
-- Estimated spending
-- Amount spent
-- Remaining budget
+The Group Match screen currently includes:
 
-![Budget Dashboard](assets/budget-dashboard.png)
+- Overall group match
+- Group preference distribution
+- Individual representation / fairness
+- AI insight
 
-### 9. Rescue My Day
+The Fairness Meter is designed to highlight when one traveller's preferences are less represented than the rest of the group.
 
-Users select what went wrong:
+---
+
+## 3.6 Final Itinerary
+
+TripSync uses a separate AI generation stage to build the final trip plan after the group decision process.
+
+The itinerary interface can show:
+
+- Trip duration
+- Estimated plan cost
+- Group match
+- Day tabs
+- Timeline
+- Activities
+- Estimated activity cost
+- Activity match
+
+This separates:
+
+> **AI activity suggestion**
+
+from:
+
+> **AI final itinerary generation**
+
+---
+
+## 3.7 Plan Rescue
+
+Plan Rescue is TripSync's main adaptive feature.
+
+The prototype is designed around six common problems:
 
 - 🌧️ Bad Weather
 - ⏰ Running Late
@@ -280,171 +307,178 @@ Users select what went wrong:
 - 🚫 Place Closed
 - 👥 Group Changed
 
-TripSync then adjusts the affected section of the itinerary.
-
-<img width="240" height="372" alt="Screenshot 2026-09-11 005454" src="https://github.com/user-attachments/assets/b91fc8db-6d08-4840-9a98-8c97475e15e1" />
-
-![Plan Rescue](assets/plan-rescue.png)
+Instead of rebuilding the whole trip, TripSync focuses on the affected part of the plan and proposes an updated itinerary.
 
 ---
 
-# 4. What Makes It Different
+# 4. Main App Areas
 
-TripSync is not designed as only another AI itinerary generator.
+TripSync currently uses five primary navigation areas.
 
-Its main differentiation is connecting **travel teaming, group decision-making and adaptive itinerary planning** in one experience.
+## Explore
 
-## 🔎 1. Travel Teaming
+Used for:
 
-Users can create a **Public Trip** and allow compatible travellers to apply to join.
+- Discovering Open Trips
+- Searching for trips
+- Starting Open Trip discovery
+- Creating a new trip
 
-Compatibility can consider:
+## My Trips
 
-- Destination and date
-- Budget range
-- Interests
-- Travel personality
-- Travel pace
-- Wake-up time
-- Transportation preference
-- Must-visit and avoid preferences
+Used for trips the user has created or joined.
 
-Private Trips remain available for existing groups such as families, couples and friends.
+## Plan
 
----
+Used for continuing the planning process for the selected trip.
 
-## ⚖️ 2. Group Fairness Meter
+## People
 
-Normal majority voting may repeatedly favour the same people.
+Used for travel-related contacts and relationships such as:
 
-TripSync therefore evaluates how well the final itinerary represents each group member.
+- Friends
+- Travel Buddies
+- Family
+- Classmates
+- Team Members / Colleagues
 
-Example:
+## Profile
 
-| Traveller | Itinerary Satisfaction |
-|---|---:|
-| Member A | 92% |
-| Member B | 81% |
-| Member C | 67% |
-| Member D | 45% |
-
-If one member is significantly underrepresented, TripSync can recommend an activity that better matches that person's interests.
+Used for the current user's travel preferences and personal profile.
 
 ---
 
-## 🚨 3. Plan Rescue
+# 5. What Makes TripSync Different
 
-Plan Rescue is TripSync's signature adaptive feature.
+## 🔎 Travel Teaming
 
-Instead of rebuilding an entire trip when something goes wrong, TripSync focuses on the affected section.
+TripSync is not only about deciding where to go.
 
-Example:
+It also supports the step before planning:
 
-**Original**
+> **Who should I travel with?**
 
-`10:00 AM → Outdoor Attraction`
-
-**Situation**
-
-`🌧️ Bad Weather`
-
-**TripSync**
-
-`Outdoor Attraction → Nearby Indoor Alternative`
-
-The system considers:
-
-- Group preferences
-- Available time
-- Budget
-- Activity type
-- Location
-
-before suggesting the replacement.
+Open Trips give solo travellers and other users a way to discover compatible travel groups.
 
 ---
 
-## 🎮 4. Game-Like Group Formation
+## ⚖️ Group Fairness
 
-TripSync takes inspiration from the idea of forming a team in multiplayer games.
+Normal majority voting can repeatedly favour the same people.
+
+TripSync therefore includes a Fairness Meter to make underrepresented preferences visible during group planning.
+
+---
+
+## 🚨 Plan Rescue
+
+TripSync is designed to remain useful after the itinerary has already been created.
+
+Instead of starting again when something changes, Plan Rescue focuses on repairing the affected section of the trip.
+
+---
+
+## 🎮 Game-Like Group Formation
+
+TripSync takes inspiration from multiplayer team formation.
 
 Instead of:
 
-> Find players → Create team → Play
+> **Find players → Form team → Play**
 
-TripSync applies:
+TripSync uses:
 
-> Find travellers → Form group → Agree → Travel
-
-This provides a different approach to solo and group travel planning.
+> **Find travellers → Form group → Agree → Travel**
 
 ---
 
-## Comparison with Existing Solutions
+# 6. Idea Evolution
 
-| Capability | Wanderlog | TripIt | TripSync |
-|---|:---:|:---:|:---:|
-| Itinerary management | ✅ | ✅ | ✅ |
-| Group collaboration | ✅ | Sharing | ✅ |
-| Budget support | ✅ | — | ✅ |
-| AI-assisted planning | ✅ | Limited / different focus | ✅ |
-| Find new travel companions | — | — | ✅ |
-| Travel compatibility | — | — | ✅ |
-| Group voting | — | — | ✅ |
-| Fairness-aware planning | — | — | ✅ |
-| Adaptive Plan Rescue | — | Disruption features focus mainly on travel logistics | ✅ |
+## Version 1 — AI Travel Planner
 
-> The comparison reflects the product features we reviewed during our research and is intended to show TripSync's design focus rather than claim that competing products cannot evolve.
+The first idea focused mainly on generating an itinerary from destination, budget and preferences.
 
 ---
 
-# 5. Technical Architecture & Feasibility
+## Version 2 — Group Travel Planner
 
-## 🛠️ Tech Stack
+The concept expanded to include:
 
-| Technology | Purpose | Why We Chose It | Expected Constraint |
-|---|---|---|---|
-| **React / Next.js** | Frontend | Component-based development and suitable for quickly building an interactive prototype | Team learning curve and development time |
-| **Supabase** | Authentication & Database | Provides authentication and PostgreSQL database features with a suitable free tier for prototyping | Free-tier limits and backend configuration |
-| **AI API** | Itinerary generation | Allows TripSync to convert group preferences and trip constraints into readable itinerary suggestions | API cost, rate limits and inconsistent AI output |
-| **Google Maps API** | Location / map information | Helps display attractions and understand locations | API quotas and billing requirements |
-| **Weather API** | Weather information | Can support future automatic weather-based Plan Rescue | API reliability and free-tier limits |
-| **Vercel** | Hosting | Simple deployment for a Next.js application | Free-tier limitations |
-
-> **TODO:** Replace technologies above if your team chooses a different final stack.
+- Group preferences
+- Voting
+- Group matching
 
 ---
 
-## 🏗️ Proposed System Architecture
+## Version 3 — Adaptive Group Travel Planner
 
-```text
-                     ┌───────────────────┐
-                     │      Users        │
-                     │ Traveller / Group │
-                     └─────────┬─────────┘
-                               │
-                               ▼
-                     ┌───────────────────┐
-                     │     Frontend      │
-                     │  React / Next.js  │
-                     └─────────┬─────────┘
-                               │
-                               ▼
-                     ┌───────────────────┐
-                     │ Backend / Supabase│
-                     ├───────────────────┤
-                     │ Users             │
-                     │ Trips             │
-                     │ Preferences       │
-                     │ Group Members     │
-                     │ Votes             │
-                     │ Budget            │
-                     │ Itinerary         │
-                     └─────────┬─────────┘
-                               │
-                  ┌────────────┴────────────┐
-                  ▼                         ▼
-          ┌───────────────┐        ┌─────────────────┐
-          │ AI / Rules    │        │ External APIs   │
-          │ Engine        │        │ Maps / Weather  │
-          └───────────────┘        └─────────────────┘
+TripSync added:
+
+- Fairness Meter
+- Plan Rescue
+- Adaptive planning
+
+---
+
+## Version 4 — Travel Teaming + Group Planning
+
+The concept expanded again with:
+
+- Open Trips
+- Private Groups
+- Travel compatibility
+- Travel Buddies
+- School / Club Trips
+- Company / Team Trips
+
+This led to the current positioning:
+
+> **Find people. Plan together. Travel better.**
+
+---
+
+# 7. Prototype
+
+**UI Prototype:**  
+[https://ai.studio/apps/afdaea94-28d1-468e-a89f-609de2f72771](https://ai.studio/apps/afdaea94-28d1-468e-a89f-609de2f72771)
+
+The current prototype demonstrates the main TripSync product structure and planning flow.
+
+Features still being refined in the current implementation include:
+
+- Trip-specific routing
+- Invitation handling
+- Owner / visitor actions
+- Editing created trips
+- Shared multi-user state
+- Some dynamic data binding
+
+The README therefore describes the current implemented prototype direction without treating unfinished or unverified integrations as completed features.
+
+---
+
+# 8. Future Development
+
+Features intentionally left outside the current prototype include:
+
+- Live weather integration
+- Advanced route optimisation
+- Hotel / flight / bus booking
+- Payment processing
+- Travel marketplace
+- Merchant offers and partnerships
+- Full social media / chat system
+
+These are future extensions rather than requirements for the current TripSync MVP.
+
+---
+
+# Final Product Story
+
+TripSync is not only an AI itinerary generator.
+
+Its core experience connects:
+
+> **Find people → Build a group → Understand preferences → Vote together → Create a fair plan → Adapt when plans change**
+
+## **Find people. Plan together. Travel better.**
