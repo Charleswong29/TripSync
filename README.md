@@ -394,6 +394,8 @@ TripSync uses:
 
 # 6. Idea Evolution
 
+<img width="820" height="453" alt="photo_2026-09-11_20-51-45" src="https://github.com/user-attachments/assets/dd45aebb-cfbc-4ee2-9fb4-d3caefb46358" />
+
 ## Version 1 — AI Travel Planner
 
 The first idea focused mainly on generating an itinerary from destination, budget and preferences.
