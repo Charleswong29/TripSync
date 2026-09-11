@@ -392,7 +392,25 @@ TripSync uses:
 
 ---
 
-# 6. Idea Evolution
+# 6. Ideation & Idea Evolution
+
+## 6.1 Initial Mind Map
+
+At the beginning of our ideation process, our team explored different problems and possible features related to group travel planning.
+
+The mind map helped us explore several areas, including:
+
+- Travel Teaming
+- User Experience
+- Travel Experience
+- Planning & Itinerary
+- Budget & Expenses
+- Plan Rescue and Adaptation
+
+<img width="820" height="453" alt="photo_2026-09-11_21-09-19" src="https://github.com/user-attachments/assets/8aa2f0d7-4971-40a5-8a22-9b0565d3bdb2" />
+
+
+## 6.2 Idea Evolution
 
 <img width="820" height="453" alt="photo_2026-09-11_20-51-45" src="https://github.com/user-attachments/assets/dd45aebb-cfbc-4ee2-9fb4-d3caefb46358" />
 
@@ -436,6 +454,11 @@ The concept expanded again with:
 This led to the current positioning:
 
 > **Find people. Plan together. Travel better.**
+
+
+## 6.3 User Flow
+
+<img width="840" height="440" alt="photo_2026-09-11_21-01-16" src="https://github.com/user-attachments/assets/0bd4c56b-c03e-4f8b-8756-39e3219143d7" />
 
 ---
 
