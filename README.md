@@ -4,8 +4,8 @@
 
 **Team Members:** Celine Hew Boon Ling, Kok Jia Hui, Siew Hoi Wei, Wong Chee Yong  
 **Problem Statement:** Travel Planner  
-**Video Presentation:**  
-**Presentation Slides:**  
+**Video Presentation:**  https://youtu.be/r3Lhlo1HS84 
+**Presentation Slides:**  https://canva.link/8yihnymf05ae4di
 
 ---
 
